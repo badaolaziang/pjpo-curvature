@@ -1,0 +1,30 @@
+<launch>
+  <rosparam>
+        w_l: 1.0
+        w_dl: 10.0
+        w_ddl: 100.0
+        w_dddl: 500.0
+        w_obs: 2.0
+        w_kappa_2: 1000.0
+        <!-- w_dkappa: 100.0 -->
+        lat_speed_limit: 1.0
+        lat_acc_limit: 2.0
+        lat_jerk_limit: 0.1
+        kappa_limit: 0.2
+        dkappa_limit: 0.1
+        smooth_bounding_dist: 0.0
+        w_smooth: 10.0
+        starting_l : 0.5
+        car_info_L: 1.5
+  </rosparam>
+  <include file="$(find pjpo_curvature)/launch/reference_line.launch">
+  <!-- <include file="$(find pjpo_curvature)/launch/origin_reference_line.launch"> -->
+  </include>
+
+  <include file="$(find pjpo_curvature)/launch/path_optimization.launch">
+  </include>
+
+  <include file="$(find pjpo_curvature)/launch/draw.launch">
+  </include>
+
+</launch>

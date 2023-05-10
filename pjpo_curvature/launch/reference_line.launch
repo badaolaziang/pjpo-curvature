@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="pjpo_curvature" type="reference_publisher.py" name="reference_publisher_node" output="screen" args="path" />
+    <!-- <node pkg="pjpo_curvature" type="node" name="pjpo_curvature_node" output="screen"/> -->
+    <!-- <node pkg="pjpo_curvature" type="draw_trajectory.py" name="draw_trajectory_node" output="screen"  /> -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d $(find pjpo_curvature)/config/config.rviz"/>
+</launch>
