@@ -1,0 +1,16 @@
+float64 x
+float64 y
+float64 s
+float64 l
+float64 dl
+float64 ddl
+float64 dddl
+float64 kappa
+float64 dkappa
+float64 left_bound
+float64 right_bound
+float64 left_bound_x
+float64 left_bound_y
+float64 right_bound_x
+float64 right_bound_y
+float64 v_max_from_lat_acc
