@@ -34,6 +34,15 @@ Clone repository to any catkin workspace and compile workspace
    source devel/setup.bash
    ```
 
+## Evaluate the Taylor estimation
+
+```shell
+  // curtvature estimation
+  python3 src/scripts/dynamic_kappa_warmstart_estimation.py
+  // squared-curvature estimation
+  python3 src/scripts/dynamic_kappa_square_warmstart_estimation.py
+```
+
 ## Run a demo
 1. launch the code:
 
@@ -42,9 +51,9 @@ Clone repository to any catkin workspace and compile workspace
 ```
 2. run the planner:
 
-    set a random 2D goal in the rviz, and get the path(s).
+    set a random 2D goal in the rviz to start the calculation, and get the path(s) in the rviz window.
 
-3. change the parameters of src/pjpo_curvature/launch/combine.launch and src/pjpo_curvature/script/reference_publisher.py to change the starting pose and the reference path.
+3. change the parameters of src/pjpo_curvature/launch/combine.launch and src/pjpo_curvature/script/reference_publisher.py to change the state of the starting pose and the shape of reference path.
 
 ## Acknowledgement
 We would like to express sincere thanks to the authors of the following tools and packages:
